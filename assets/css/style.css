@@ -82,6 +82,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .container{
     width: 75%;
     margin: auto;
@@ -143,6 +147,7 @@ header{
     background-color: var(--discord-primary);
     display: flex;
     padding: 1% 0;
+    font-size: 13px;
 }
 
 header > .container{
