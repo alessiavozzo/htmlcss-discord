@@ -55,13 +55,13 @@
     height: 150px;
 } */
 
-.debug #bottom_section{
+/* .debug #bottom_section{
     height: 400px;
 }
 
 .debug .keep_in_touch{
     height: 350px;
-}
+} */
 
 .debug .cont-footer{
     height: 300px;
@@ -199,8 +199,31 @@ h1{
 
 /* #region bottom_section */
 
+#bottom_section > .keep_in_touch{
+    display: block;
+    text-align: center;
+    padding: 5%;
+}
 
+.keep_in_touch > img{
+    max-width: 85%;
+}
 
+h4{
+    padding: 3% 0;
+    background-image: url(../img/stars.svg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#download{
+    background-color: var(--discord-text);
+    color: var(--discord-lighter);
+    border: 1px solid var(--discord-text);
+}
+
+/* #endregion bottom_section */
 
 /* #endregion Main */
 
