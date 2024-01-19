@@ -16,52 +16,53 @@
 
 .debug #site_main{
     height: 1200px;
-} */
+}
 
 .debug #site_footer{
     height: 350px;
 }
 
-/* .debug #section_banner{
-    height: 200px;
-} */
 
-/* .debug #banner{
+.debug #section_banner{
+    height: 200px;
+}
+
+.debug #banner{
     height: 150px;
 }
- */
 
-/* .debug .section_group{
+
+.debug .section_group{
     height: 200px;
-} */
+}
 
-/* .debug .section_meet{
+.debug .section_meet{
     height: 200px;
-} */
+}
 
-/* .debug .section_fandom{
+.debug .section_fandom{
     height: 200px;
-} */
+}
 
-/* .debug .group{
+.debug .group{
     height: 150px;
-} */
+}
 
-/* .debug .meet{
+.debug .meet{
     height: 150px;
-} */
+}
 
-/* .debug .fandom{
+.debug .fandom{
     height: 150px;
-} */
+}
 
-/* .debug #bottom_section{
+.debug #bottom_section{
     height: 400px;
 }
 
 .debug .keep_in_touch{
     height: 350px;
-} */
+}
 
 .debug .cont-footer{
     height: 300px;
@@ -69,7 +70,7 @@
 
 .debug header, .debug main, .debug footer, .debug div{
     border: 2px solid black;
-}
+} */
 
 /* #endregion debug */
 
@@ -85,7 +86,6 @@
     width: 75%;
     margin: auto;
     display: flex;
-    border: 1px dotted black;
 }
 
 a{
@@ -98,13 +98,42 @@ button{
     padding: 0.4rem;
 }
 
+.login, #mac_dl{
+    border: 1px solid var(--discord-light);
+}
+
 h2{
     padding: 5% 0;
 }
 
-.bg-color{
-    background-color: rgba(255, 255, 255, 0.89);
+.wave{
+    background-image: url(../img/wave.svg);
+    height: 3rem;
+    width: 100%;
 }
+
+.wave-reverse{
+    transform: rotate(180deg);
+}
+
+h3, h5{
+    padding: 3% 0;
+    color: var(--discord-text);
+}
+
+li{
+    list-style: none;
+    font-size: 12px;
+    padding: 2%;
+    color: var(--discord-lighter);
+}
+
+.d-button{
+    background-color: var(--discord-text);
+    color: var(--discord-lighter);
+    border: 1px solid var(--discord-text);
+}
+
 
 /* #endregion Common_rules */
 
@@ -113,6 +142,7 @@ h2{
 header{
     background-color: var(--discord-primary);
     display: flex;
+    padding: 1% 0;
 }
 
 header > .container{
@@ -170,22 +200,19 @@ h1{
     padding-bottom: 1rem;
 }
 
+
 #open_browser{
     background-color: var(--discord-dark);
     color: var(--discord-lighter);
     margin-left: 1rem;
+    border: 1px solid var(--discord-dark);
 }
 
 /* #endregion banner */
 
 /* #region sections_group_meet_fandom */
 
-.section_group{
-    background-image: url(../img/wave.svg);
-    background-size: 100% 10%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
+
 
 .group, .meet, .fandom{
     padding: 5% 0;
@@ -205,12 +232,7 @@ h1{
     flex-direction: row-reverse;
 }
 
-.section_fandom{
-    background-image: url(../img/wave.svg);
-    background-size: 100% 10%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
+
 
 /* #endregion sections_group_meet_fandom */
 
@@ -234,25 +256,17 @@ h4{
     background-position: center;
 }
 
-#download{
-    background-color: var(--discord-text);
-    color: var(--discord-lighter);
-    border: 1px solid var(--discord-text);
-}
 
 /* #endregion bottom_section */
 
 /* #endregion Main */
 
 
-
-
-
 /* #region Footer */
 
 footer{
     background-color: var(--discord-dark);
-    display: flex;
+    padding: 4%;
 }
 
 #site_footer > .container{
@@ -262,20 +276,30 @@ footer{
 /* Footer top */
 #footer_top{    
     height: 85%;
-    border-bottom: 1px solid grey;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--discord-text);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
     display: flex;
 }
 
 #social{
     width: 30%;
-    border: 1px dotted black;
+    padding: 0 1%;
+}
+
+.language{
+    color: var(--discord-lighter);
+    padding: 5% 0%;
+    font-size: 12px;
+}
+
+.language > img{
+    max-width: 1rem;
 }
 
 .info{
     width: calc(70% / 4);
-    border: 1px dotted white;
+    padding: 0 1%;
 }
 
 /* Footer bottom */
@@ -286,9 +310,10 @@ footer{
     align-items: center;
 }
 
-.logo-footer, .signup{
-    padding: 0.2rem;
-    border: 1px dotted black;
+#footer_bottom > .d-button{
+    font-size: 12px
 }
+
+
 
 /* #endregion Footer */
