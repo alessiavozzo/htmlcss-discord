@@ -108,11 +108,16 @@ button{
 
 h2{
     padding: 5% 0;
+    font-size: 48px;
+}
+
+p{
+    font-size: 24px;
 }
 
 .wave{
     background-image: url(../img/wave.svg);
-    height: 3rem;
+    height: 10rem;
     width: 100%;
 }
 
@@ -127,8 +132,8 @@ h3, h5{
 
 li{
     list-style: none;
-    font-size: 12px;
-    padding: 2%;
+    font-size: 14px;
+    padding: 2% 0;
     color: var(--discord-lighter);
 }
 
@@ -169,6 +174,11 @@ nav{
 
 /* #region Main */
 
+#site_main{
+    display: flex;
+    flex-direction: column;
+}
+
 /* #region Main-sections */
 
 #section_banner{
@@ -194,15 +204,17 @@ nav{
     text-align: center;
     color: var(--discord-lighter);
     padding-top: 2%;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
 }
 
 h1{
-    padding: 1rem;
+    padding: 3rem 0;
+    font-size: 50px;
 }
 
 #banner > p{
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
+    font-size: 24px;
 }
 
 
@@ -211,6 +223,15 @@ h1{
     color: var(--discord-lighter);
     margin-left: 1rem;
     border: 1px solid var(--discord-dark);
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+#mac_dl{
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 /* #endregion banner */
@@ -246,19 +267,26 @@ h1{
 #bottom_section > .keep_in_touch{
     display: block;
     text-align: center;
-    padding: 5%;
+    padding: 5% 0;
 }
 
 .keep_in_touch > img{
-    max-width: 85%;
+    width: 100%;
 }
 
 h4{
     padding: 3% 0;
+    font-size: 32px;
     background-image: url(../img/stars.svg);
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.keep_in_touch > .d-button{
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 
@@ -271,7 +299,7 @@ h4{
 
 footer{
     background-color: var(--discord-dark);
-    padding: 4%;
+    padding: 6% 0;
 }
 
 #site_footer > .container{
@@ -282,14 +310,19 @@ footer{
 #footer_top{    
     height: 85%;
     border-bottom: 1px solid var(--discord-text);
-    margin-bottom: 0.8rem;
-    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
 }
 
 #social{
     width: 30%;
     padding: 0 1%;
+}
+
+h3{
+    font-size: 34px;
+    padding: 0 0 3% 0;
 }
 
 .language{
@@ -305,6 +338,10 @@ footer{
 .info{
     width: calc(70% / 4);
     padding: 0 1%;
+}
+
+h5{
+    font-size: 14px;
 }
 
 /* Footer bottom */
