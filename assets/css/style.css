@@ -1,0 +1,231 @@
+/* #region Color Palette */
+:root{
+    --bool-header-background:rgba(173, 216, 230, 1);
+    --bool-header-items: rgba(218, 165, 32, 1);
+    --bool-main-section-banner: rgba(0, 0, 139, 1);
+    --bool-banner: rgba(238, 130, 238, 1);
+    --bool-main-section-light: white;
+    --bool-main-section-dark: rgba(211, 211, 211, 1);
+    --bool-container: red;
+    --bool-container-img:rgba(30, 144, 255, 1);
+    --bool-container-text:rgba(255, 192, 203, 1);
+    --bool-bottom-container:rgba(34, 139, 34, 1);
+    --bool-footer-background: rgba(35, 39, 42, 1);
+    --bool-footer-top-social-items:rgba(240, 128, 128, 1);
+    --bool-footer-top-info-items:rgba(32, 178, 170, 1);
+    --bool-footer-bottom: rgba(127, 255, 212, 1);
+    --bool-footer-bottom-items: rgba(255, 182, 193, 1);
+}
+/* #endregion Color Palette */
+
+/* #region debug */
+
+.debug #site_header{
+    height: 50px;
+}
+
+.debug #site_main{
+    height: 1200px;
+}
+
+.debug #site_footer{
+    height: 350px;
+}
+
+.debug #section_banner{
+    height: 200px;
+}
+
+.debug #banner{
+    height: 150px;
+}
+
+
+.debug .section_group{
+    height: 200px;
+}
+
+.debug .section_meet{
+    height: 200px;
+}
+
+.debug .section_fandom{
+    height: 200px;
+}
+
+.debug .group{
+    height: 150px;
+}
+
+.debug .meet{
+    height: 150px;
+}
+
+.debug .fandom{
+    height: 150px;
+}
+
+.debug #bottom_section{
+    height: 400px;
+}
+
+.debug .keep_in_touch{
+    height: 350px;
+}
+
+.debug .cont-footer{
+    height: 300px;
+}
+
+.debug header, .debug main, .debug footer, .debug div{
+    border: 2px solid black;
+}
+
+/* #endregion debug */
+
+/* #region Common_rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    border: 1px dotted black;
+}
+
+/* #endregion Common_rules */
+
+/* #region Header */
+
+header{
+    background-color: var(--bool-header-background);
+    display: flex;
+}
+
+header > .container{
+    background-color: var(--bool-header-items);
+    border: 1px black dotted;
+}
+
+.logo, .login{
+    flex-grow: 1;
+}
+
+nav{
+    flex-grow: 2;
+    text-align: center;
+}
+
+.logo, .login, nav{
+    padding: 0.2rem;
+    border: 1px dotted black;
+}
+
+/* #endregion Header */
+
+/* #region Main */
+/* Main sections */
+
+#section_banner{
+    background-color: var(--bool-main-section-banner);
+    display: flex;
+}
+
+.section_group, .section_fandom{
+    background-color: var(--bool-main-section-light);
+    display: flex;
+}
+
+.section_meet{
+    background-color: var(--bool-main-section-dark);
+    display: flex;
+}
+
+#bottom_section{    
+    background-color: var(--bool-main-section-dark);
+    display: flex;
+}
+
+/* Section container */
+
+#banner{
+    width: 60%;
+    background-color: var(--bool-banner);
+    margin: auto;
+    border: 1px dotted black;
+}
+
+.meet{
+    flex-direction: row-reverse;
+}
+
+#bottom_section > .container{
+    background-color: var(--bool-bottom-container);
+}
+
+.img{
+    background-color: var(--bool-container-img);
+    width: 60%;
+}
+
+.text{
+    background-color: var(--bool-container-text);
+    width: 40%;
+}
+
+/* #endregion Main */
+
+
+/* #region Footer */
+
+footer{
+    background-color: var(--bool-footer-background);
+    display: flex;
+}
+
+#site_footer > .container{
+    display: block;
+}
+
+/* Footer top */
+#footer_top{    
+    height: 85%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+}
+
+#social{
+    background-color: var(--bool-footer-top-social-items);
+    width: 30%;
+    border: 1px dotted black;
+}
+
+.info{
+    background-color: var(--bool-footer-top-info-items);
+    width: calc(70% / 4);
+    border: 1px dotted white;
+}
+
+/* Footer bottom */
+#footer_bottom{  
+    background-color: var(--bool-footer-bottom);  
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer, .signup{
+    background-color: pink;
+    padding: 0.2rem;
+    border: 1px dotted black;
+}
+
+/* #endregion Footer */
