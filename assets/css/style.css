@@ -22,14 +22,14 @@
     height: 350px;
 }
 
-.debug #section_banner{
+/* .debug #section_banner{
     height: 200px;
-}
+} */
 
-.debug #banner{
+/* .debug #banner{
     height: 150px;
 }
-
+ */
 
 .debug .section_group{
     height: 200px;
@@ -93,6 +93,11 @@ a{
     color: var(--discord-lighter);
 }
 
+button{
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
 /* #endregion Common_rules */
 
 /* #region Header */
@@ -115,19 +120,18 @@ nav{
     align-items: center;
 }
 
-button{
-    border-radius: 1rem;
-    padding: 0.3rem;
-}
+
 
 /* #endregion Header */
 
 /* #region Main */
+
 /* Main sections */
 
 #section_banner{
-    background-color: var(--discord-primary);
-    display: flex;
+    background-color: var(--discord-primary); 
+    background-image: url(../img/jumbo.png);
+    background-size: 100% 100%;
 }
 
 .section_group, .section_fandom{
@@ -141,14 +145,31 @@ button{
 }
 
 
-
-/* Section container */
-
+/* #region banner */
 #banner{
     width: 60%;
     margin: auto;
-    border: 1px dotted black;
+    text-align: center;
+    color: var(--discord-lighter);
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
+
+h1{
+    padding: 1rem;
+}
+
+#banner > p{
+    padding-bottom: 1rem;
+}
+
+#open_browser{
+    background-color: var(--discord-dark);
+    color: var(--discord-lighter);
+    margin-left: 1rem;
+}
+
+/* #endregion banner */
 
 .meet{
     flex-direction: row-reverse;
