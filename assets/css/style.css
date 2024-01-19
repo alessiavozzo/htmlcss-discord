@@ -10,13 +10,13 @@
 
 /* #region debug */
 
-.debug #site_header{
+/* .debug #site_header{
     height: 50px;
 }
 
 .debug #site_main{
     height: 1200px;
-}
+} */
 
 .debug #site_footer{
     height: 350px;
@@ -31,29 +31,29 @@
 }
  */
 
-.debug .section_group{
+/* .debug .section_group{
     height: 200px;
-}
+} */
 
-.debug .section_meet{
+/* .debug .section_meet{
     height: 200px;
-}
+} */
 
-.debug .section_fandom{
+/* .debug .section_fandom{
     height: 200px;
-}
+} */
 
-.debug .group{
+/* .debug .group{
     height: 150px;
-}
+} */
 
-.debug .meet{
+/* .debug .meet{
     height: 150px;
-}
+} */
 
-.debug .fandom{
+/* .debug .fandom{
     height: 150px;
-}
+} */
 
 .debug #bottom_section{
     height: 400px;
@@ -98,6 +98,10 @@ button{
     padding: 0.4rem;
 }
 
+h2{
+    padding: 5% 0;
+}
+
 /* #endregion Common_rules */
 
 /* #region Header */
@@ -126,7 +130,7 @@ nav{
 
 /* #region Main */
 
-/* Main sections */
+/* #region Main-sections */
 
 #section_banner{
     background-color: var(--discord-primary); 
@@ -136,14 +140,13 @@ nav{
 
 .section_group, .section_fandom{
     background-color: var(--discord-lighter);
-    display: flex;
 }
 
 .section_meet, #bottom_section{
     background-color: var(--discord-light);
-    display: flex;
 }
 
+/* #endregion Main-sections */
 
 /* #region banner */
 #banner{
@@ -171,23 +174,33 @@ h1{
 
 /* #endregion banner */
 
-.meet{
-    flex-direction: row-reverse;
+/* #region sections_group_meet_fandom */
+
+.group, .meet, .fandom{
+    padding: 5% 0;
 }
 
-#bottom_section > .container{
-    background-color: var(--bool-bottom-container);
-}
-
-.img{
+.group > img, .meet > img, .fandom > img{
     background-color: var(--bool-container-img);
-    width: 60%;
+    width: 65%;
 }
 
 .text{
     background-color: var(--bool-container-text);
-    width: 40%;
+    width: 35%;
 }
+
+.meet{
+    flex-direction: row-reverse;
+}
+
+
+/* #endregion sections_group_meet_fandom */
+
+/* #region bottom_section */
+
+
+
 
 /* #endregion Main */
 
