@@ -335,6 +335,18 @@ h3{
     max-width: 1rem;
 }
 
+.social-icons{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+svg{
+    width: 1.5rem;
+}
+
 .info{
     width: calc(70% / 4);
     padding: 0 1%;
