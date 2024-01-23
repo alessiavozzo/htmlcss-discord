@@ -97,13 +97,15 @@ a{
     color: var(--discord-lighter);
 }
 
-button{
+.btn{
     border-radius: 1rem;
     padding: 0.4rem;
 }
 
 .login, #mac_dl{
     border: 1px solid var(--discord-light);
+    background-color: var(--discord-light);
+    color: var(--discord-dark);
 }
 
 h2{
@@ -133,8 +135,8 @@ h3, h5{
 li{
     list-style: none;
     font-size: 14px;
-    padding: 2% 0;
-    color: var(--discord-lighter);
+    padding: 2.5% 0;
+    color: var(--discord-light);
 }
 
 .d-button{
@@ -203,13 +205,13 @@ nav{
     margin: auto;
     text-align: center;
     color: var(--discord-lighter);
-    padding-top: 2%;
+    padding-top: 4%;
     padding-bottom: 8%;
 }
 
 h1{
     padding: 3rem 0;
-    font-size: 50px;
+    font-size: 54px;
 }
 
 #banner > p{
@@ -220,16 +222,16 @@ h1{
 
 #open_browser{
     background-color: var(--discord-dark);
-    color: var(--discord-lighter);
+    color: var(--discord-light);
     margin-left: 1rem;
     border: 1px solid var(--discord-dark);
-    font-size: 16px;
+    font-size: 18px;
     padding: 1rem;
     border-radius: 2rem;
 }
 
 #mac_dl{
-    font-size: 16px;
+    font-size: 18px;
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -238,7 +240,9 @@ h1{
 
 /* #region sections_group_meet_fandom */
 
-
+.group h2{
+    width: 90%;
+}
 
 .group, .meet, .fandom{
     padding: 5% 0;
@@ -264,13 +268,13 @@ h1{
 
 /* #region bottom_section */
 
-#bottom_section > .keep_in_touch{
+#bottom_section > #keep_in_touch{
     display: block;
     text-align: center;
     padding: 5% 0;
 }
 
-.keep_in_touch > img{
+#keep_in_touch > img{
     width: 100%;
 }
 
@@ -283,8 +287,8 @@ h4{
     background-position: center;
 }
 
-.keep_in_touch > .d-button{
-    font-size: 16px;
+#keep_in_touch > .d-button{
+    font-size: 18px;
     padding: 1rem;
     border-radius: 2rem;
 }
